@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Treetable demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="treetable.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Treetable demo</h1>
+        </header>
+        <table id="strct" class="treetable">
+            <thead>
+                <tr>
+                    <th>Title</th><th>Path</th><th>Status</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="1"  data-id="1"  data-pid="0"><td class="level-1"><a href="#">Homepage</a></td>&nbsp;<td></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                <tr id="7"  data-id="7"  data-pid="1"><td class="level-2"><a href="#"><strong>Content 01</strong></a><br />Sub pages demo</td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="8"  data-id="8"  data-pid="7"><td class="level-3"><a href="#">Content 01-01</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="9"  data-id="9"  data-pid="7"><td class="level-3"><a href="#">Content 01-02</a></td><td>path/to/this/page<td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="10" data-id="10" data-pid="9"><td class="level-4"><a href="#">Content 01-02-01</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="11" data-id="11" data-pid="9"><td class="level-4"><a href="#">Content 01-02-02</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="12" data-id="12" data-pid="7"><td class="level-3"><a href="#">Content 01-03</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="2"  data-id="2"  data-pid="1"><td class="level-2"><a href="#"><strong>Content 02</strong></a><br />Different status examples</td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="13" data-id="13" data-pid="2"><td class="level-3"><a href="#">Content 02-01</a></td><td>path/to/this/page</td><td><span class="badge badge-draft">DRAFT</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="14" data-id="14" data-pid="2"><td class="level-3"><a href="#">Content 02-02</a></td><td>path/to/this/page</td><td><span class="badge badge-pending">PENDING</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="15" data-id="15" data-pid="2"><td class="level-3"><a href="#">Content 02-03</a></td><td>path/to/this/page</td><td><span class="badge badge-unpublished">UNPUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="16" data-id="16" data-pid="2"><td class="level-3"><a href="#">Content 02-04</a></td><td>path/to/this/page</td><td><span class="badge badge-deleted">DELETED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="3"  data-id="3"  data-pid="1"><td class="level-2"><a href="#"><strong>Content 03</strong></a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="17" data-id="17" data-pid="3"><td class="level-3"><a href="#">Content 03-01</a></td><td>path/to/this/page</td><td><span class="badge badge-pending">PENDING</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="18" data-id="18" data-pid="3"><td class="level-3"><a href="#">Content 03-02</a></td><td>path/to/this/page</td><td><span class="badge badge-draft">DRAFT</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="19" data-id="19" data-pid="3"><td class="level-3"><a href="#">Content 03-03</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>            
+                <tr id="20" data-id="20" data-pid="3"><td class="level-3"><a href="#">Content 03-04</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>            
+                <tr id="4"  data-id="4"  data-pid="1"><td class="level-2"><a href="#"><strong>Content 04</strong></a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="5"  data-id="5"  data-pid="1"><td class="level-2"><a href="#"><strong>Content 05</strong></a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="6"  data-id="6"  data-pid="1"><td class="level-2"><a href="#"><strong>Content 06</strong></a></td><td>&nbsp;</td><td>&nbsp;</td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="21" data-id="21" data-pid="6"><td class="level-3"><a href="#">Content 06-01</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+                <tr id="22" data-id="22" data-pid="6"><td class="level-3"><a href="#">Content 06-02</a></td><td>path/to/this/page</td><td><span class="badge badge-published">PUBLISHED</span></td><td><a href="#">Edit</a> <a href="#">Delete</a> <a href="#">Add</a></td></tr>
+            </tbody>
+        </table>
+        <p>An open source demo from Luca Nardone</p>
+    </body>
+    <script src="treetable.js"></script>
+    <script>
+        let Bob = new Treetable();
+    </script>
+</html>
